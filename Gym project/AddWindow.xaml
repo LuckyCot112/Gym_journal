@@ -1,0 +1,31 @@
+﻿<Window x:Class="Gym_project.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gym_project"
+        mc:Ignorable="d"
+        Title="Создание встречи" Height="335.567" Width="592.533" ResizeMode="NoResize" IsTabStop="True" ShowInTaskbar="False" WindowStyle="None" WindowStartupLocation="CenterOwner">
+    <Grid Margin="0,0,0.2,3.2" Background="#FFD6D6D6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textbox_name" HorizontalAlignment="Left" Height="23" Margin="23,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="278"/>
+        <Label x:Name="label_name" Content="Введите ФИО клиента" HorizontalAlignment="Left" Margin="23,19,0,0" VerticalAlignment="Top" Height="26" Width="155"/>
+        <Label x:Name="label_table" Content="Выберите дату и время тренировки" HorizontalAlignment="Left" Margin="323,10,0,0" VerticalAlignment="Top" Width="251" Height="26"/>
+        <TextBox x:Name="textbox_date" HorizontalAlignment="Left" Height="23" Margin="323,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Visibility="Hidden"/>
+        <Button x:Name="button_add" Content="Добавить клиента" HorizontalAlignment="Left" Margin="432,278,0,0" VerticalAlignment="Top" Width="142" Height="43" Click="button_add_click"/>
+        <Button x:Name="button_cancel" Content="Отмена" HorizontalAlignment="Left" Margin="23,278,0,0" VerticalAlignment="Top" Width="152" Height="44" Click="button_cancel_Click"/>
+        <Label x:Name="label_type" Content="Выберите вид тренировки" HorizontalAlignment="Left" Margin="23,84,0,0" VerticalAlignment="Top" Height="26" Width="169"/>
+        <Button x:Name="button_edit" Content="Изменить запись" HorizontalAlignment="Left" Margin="432,278,0,0" VerticalAlignment="Top" Width="142" Height="43" Click="button_edit_click"/>
+        <Label x:Name="debug" Content="Label" HorizontalAlignment="Left" Margin="180,303,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.398,0.688" Height="26" Width="38"/>
+        <Calendar x:Name="calendar1" HorizontalAlignment="Left" Margin="323,44,0,0" VerticalAlignment="Top" Width="187" Height="175"/>
+        <ComboBox x:Name="type" HorizontalAlignment="Left" Margin="23,110,0,0" VerticalAlignment="Top" Width="169" Height="22"/>
+        <Label Content="Выберите время" HorizontalAlignment="Left" Margin="315,208,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="table" HorizontalAlignment="Left" Margin="421,212,0,0" VerticalAlignment="Top" Width="105"/>
+        <CheckBox x:Name="checkbox_confirm" Content="Отметить присутствие на тренировке" HorizontalAlignment="Left" Margin="25,150,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+        <TextBox x:Name="textbox_ident" HorizontalAlignment="Left" Margin="122,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
